@@ -1,0 +1,26 @@
+[
+  {
+    "handle": "dev_engineer",
+    "display_name": "Dev Engineer",
+    "bio": "Backend and APIs.",
+    "followers_count": 1200,
+    "following_count": 340,
+    "created_at": "2022-03-15T10:00:00Z"
+  },
+  {
+    "handle": "data_science_daily",
+    "display_name": "Data Science Daily",
+    "bio": "ML and stats.",
+    "followers_count": 8500,
+    "following_count": 1200,
+    "created_at": "2021-08-01T08:30:00Z"
+  },
+  {
+    "handle": "infra_ops",
+    "display_name": "Infra Ops",
+    "bio": "",
+    "followers_count": 420,
+    "following_count": 180,
+    "created_at": "2023-01-20T14:00:00Z"
+  }
+]

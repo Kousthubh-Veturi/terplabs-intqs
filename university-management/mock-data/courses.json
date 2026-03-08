@@ -1,0 +1,42 @@
+[
+  {
+    "course_id": "c1",
+    "code": "CS101",
+    "name": "Intro to Programming",
+    "capacity": 3,
+    "schedule": "MWF 10:00-10:50",
+    "prerequisites": []
+  },
+  {
+    "course_id": "c2",
+    "code": "CS102",
+    "name": "Data Structures",
+    "capacity": 3,
+    "schedule": "MWF 11:00-11:50",
+    "prerequisites": ["c1"]
+  },
+  {
+    "course_id": "c3",
+    "code": "MATH101",
+    "name": "Calculus I",
+    "capacity": 2,
+    "schedule": "TR 09:00-10:15",
+    "prerequisites": []
+  },
+  {
+    "course_id": "c4",
+    "code": "CS201",
+    "name": "Algorithms",
+    "capacity": 2,
+    "schedule": "TR 14:00-15:15",
+    "prerequisites": ["c2"]
+  },
+  {
+    "course_id": "c5",
+    "code": "CS101-LAB",
+    "name": "Intro to Programming Lab",
+    "capacity": 4,
+    "schedule": "W 14:00-15:50",
+    "prerequisites": ["c1"]
+  }
+]

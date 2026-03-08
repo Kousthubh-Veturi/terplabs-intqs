@@ -1,0 +1,32 @@
+[
+  {
+    "restaurant_id": "r1",
+    "name": "Bella Pizza",
+    "cuisine": "Italian",
+    "address": "123 Main St"
+  },
+  {
+    "restaurant_id": "r2",
+    "name": "Sushi Place",
+    "cuisine": "Japanese",
+    "address": "456 Oak Ave"
+  },
+  {
+    "restaurant_id": "r3",
+    "name": "Taco House",
+    "cuisine": "Mexican",
+    "address": "789 Elm Rd"
+  },
+  {
+    "restaurant_id": "r4",
+    "name": "Bella Pizzeria",
+    "cuisine": "Italian",
+    "address": "200 Second St"
+  },
+  {
+    "restaurant_id": "r5",
+    "name": "Curry Bowl",
+    "cuisine": "Indian",
+    "address": "321 Pine Blvd"
+  }
+]

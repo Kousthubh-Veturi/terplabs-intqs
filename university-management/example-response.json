@@ -1,0 +1,124 @@
+{
+  "schedule": {
+    "endpoint": "GET /api/students/s1/schedule",
+    "response": [
+      {
+        "course_id": "c1",
+        "code": "CS101",
+        "name": "Intro to Programming",
+        "schedule": "MWF 10:00-10:50"
+      },
+      {
+        "course_id": "c2",
+        "code": "CS102",
+        "name": "Data Structures",
+        "schedule": "MWF 11:00-11:50"
+      },
+      {
+        "course_id": "c3",
+        "code": "MATH101",
+        "name": "Calculus I",
+        "schedule": "TR 09:00-10:15"
+      }
+    ]
+  },
+  "transcript": {
+    "endpoint": "GET /api/students/s1/transcript",
+    "response": [
+      {
+        "course_id": "c1",
+        "code": "CS101",
+        "name": "Intro to Programming",
+        "enrolled_at": "2024-01-10T09:00:00Z",
+        "status": "enrolled"
+      },
+      {
+        "course_id": "c2",
+        "code": "CS102",
+        "name": "Data Structures",
+        "enrolled_at": "2024-01-10T09:05:00Z",
+        "status": "enrolled"
+      },
+      {
+        "course_id": "c3",
+        "code": "MATH101",
+        "name": "Calculus I",
+        "enrolled_at": "2024-01-10T09:10:00Z",
+        "status": "enrolled"
+      }
+    ]
+  },
+  "roster": {
+    "endpoint": "GET /api/courses/c1/roster",
+    "response": [
+      {
+        "student_id": "s1",
+        "name": "Alex Chen",
+        "email": "alex.chen@university.edu",
+        "enrolled_at": "2024-01-10T09:00:00Z"
+      },
+      {
+        "student_id": "s2",
+        "name": "Jordan Lee",
+        "email": "jordan.lee@university.edu",
+        "enrolled_at": "2024-01-10T09:15:00Z"
+      },
+      {
+        "student_id": "s3",
+        "name": "Sam Rivera",
+        "email": "sam.rivera@university.edu",
+        "enrolled_at": "2024-01-10T09:25:00Z"
+      }
+    ]
+  },
+  "availability": {
+    "endpoint": "GET /api/courses/c2/availability",
+    "response": {
+      "course_id": "c2",
+      "code": "CS102",
+      "name": "Data Structures",
+      "capacity": 3,
+      "enrolled_count": 1,
+      "available_slots": 2
+    }
+  },
+  "enroll_success": {
+    "endpoint": "POST /api/enrollments",
+    "request": {
+      "student_id": "s2",
+      "course_id": "c2"
+    },
+    "response": {
+      "enrollment_id": "e7",
+      "student_id": "s2",
+      "course_id": "c2",
+      "enrolled_at": "2024-02-01T10:00:00Z",
+      "status": "enrolled"
+    },
+    "status_code": 201
+  },
+  "enroll_course_full": {
+    "endpoint": "POST /api/enrollments",
+    "request": {
+      "student_id": "s3",
+      "course_id": "c3"
+    },
+    "note": "c3 (MATH101) has capacity 2; s1 and s2 already enrolled.",
+    "response": {
+      "error": "Course is full"
+    },
+    "status_code": 409
+  },
+  "enroll_duplicate": {
+    "endpoint": "POST /api/enrollments",
+    "request": {
+      "student_id": "s1",
+      "course_id": "c1"
+    },
+    "note": "s1 is already enrolled in c1.",
+    "response": {
+      "error": "Already enrolled in this course"
+    },
+    "status_code": 409
+  }
+}

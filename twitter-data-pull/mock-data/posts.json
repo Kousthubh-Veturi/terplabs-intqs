@@ -1,0 +1,90 @@
+[
+  {
+    "id": "p1",
+    "handle": "dev_engineer",
+    "text": "Shipped a new API today. Engagement score = likes + 2*reposts + replies.",
+    "created_at": "2024-02-10T14:00:00Z",
+    "likes": 45,
+    "replies": 12,
+    "reposts": 8,
+    "impressions": 3200,
+    "hashtags": ["backend", "api"]
+  },
+  {
+    "id": "p2",
+    "handle": "dev_engineer",
+    "text": "Debugging timezone bugs again.",
+    "created_at": "2024-02-15T09:30:00Z",
+    "likes": 22,
+    "replies": 5,
+    "reposts": 2,
+    "impressions": 890,
+    "hashtags": []
+  },
+  {
+    "id": "p3",
+    "handle": "dev_engineer",
+    "text": "Week in review: 3 PRs merged.",
+    "created_at": "2024-02-20T18:00:00Z",
+    "likes": 18,
+    "replies": 3,
+    "reposts": 1,
+    "impressions": 450,
+    "hashtags": ["backend"]
+  },
+  {
+    "id": "p4",
+    "handle": "data_science_daily",
+    "text": "Introduction to gradient descent.",
+    "created_at": "2024-01-05T11:00:00Z",
+    "likes": 210,
+    "replies": 34,
+    "reposts": 56,
+    "impressions": 15000,
+    "hashtags": ["ml", "datascience"]
+  },
+  {
+    "id": "p5",
+    "handle": "data_science_daily",
+    "text": "Why you should care about feature scaling.",
+    "created_at": "2024-01-12T10:00:00Z",
+    "likes": 180,
+    "replies": 28,
+    "reposts": 42,
+    "impressions": 12000,
+    "hashtags": ["ml", "datascience"]
+  },
+  {
+    "id": "p6",
+    "handle": "data_science_daily",
+    "text": "Quick tip: always validate your train/test split.",
+    "created_at": "2024-02-01T08:00:00Z",
+    "likes": 95,
+    "replies": 15,
+    "reposts": 20,
+    "impressions": 6000,
+    "hashtags": ["ml"]
+  },
+  {
+    "id": "p7",
+    "handle": "infra_ops",
+    "text": "Kubernetes upgrade completed.",
+    "created_at": "2024-02-18T16:00:00Z",
+    "likes": 8,
+    "replies": 2,
+    "reposts": 0,
+    "impressions": 120,
+    "hashtags": ["kubernetes", "devops"]
+  },
+  {
+    "id": "p8",
+    "handle": "infra_ops",
+    "text": "Monitoring 101.",
+    "created_at": "2024-02-22T12:00:00Z",
+    "likes": 14,
+    "replies": 4,
+    "reposts": 1,
+    "impressions": 280,
+    "hashtags": ["devops"]
+  }
+]

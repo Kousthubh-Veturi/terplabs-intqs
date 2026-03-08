@@ -1,0 +1,17 @@
+[
+  {
+    "student_id": "s1",
+    "name": "Alex Chen",
+    "email": "alex.chen@university.edu"
+  },
+  {
+    "student_id": "s2",
+    "name": "Jordan Lee",
+    "email": "jordan.lee@university.edu"
+  },
+  {
+    "student_id": "s3",
+    "name": "Sam Rivera",
+    "email": "sam.rivera@university.edu"
+  }
+]

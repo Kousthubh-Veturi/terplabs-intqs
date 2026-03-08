@@ -1,0 +1,106 @@
+{
+  "summary": {
+    "endpoint": "GET /api/twitter/users/dev_engineer/summary",
+    "response": {
+      "handle": "dev_engineer",
+      "display_name": "Dev Engineer",
+      "total_posts": 3,
+      "total_engagement_score": 109,
+      "average_engagement_per_post": 36.33,
+      "top_hashtag": "backend"
+    }
+  },
+  "posts": {
+    "endpoint": "GET /api/twitter/users/dev_engineer/posts",
+    "response": [
+      {
+        "id": "p3",
+        "handle": "dev_engineer",
+        "text": "Week in review: 3 PRs merged.",
+        "created_at": "2024-02-20T18:00:00Z",
+        "likes": 18,
+        "replies": 3,
+        "reposts": 1,
+        "impressions": 450,
+        "hashtags": ["backend"]
+      },
+      {
+        "id": "p2",
+        "handle": "dev_engineer",
+        "text": "Debugging timezone bugs again.",
+        "created_at": "2024-02-15T09:30:00Z",
+        "likes": 22,
+        "replies": 5,
+        "reposts": 2,
+        "impressions": 890,
+        "hashtags": []
+      },
+      {
+        "id": "p1",
+        "handle": "dev_engineer",
+        "text": "Shipped a new API today. Engagement score = likes + 2*reposts + replies.",
+        "created_at": "2024-02-10T14:00:00Z",
+        "likes": 45,
+        "replies": 12,
+        "reposts": 8,
+        "impressions": 3200,
+        "hashtags": ["backend", "api"]
+      }
+    ]
+  },
+  "top_posts": {
+    "endpoint": "GET /api/twitter/users/dev_engineer/top-posts",
+    "note": "Top posts by engagement_score = likes + 2*reposts + replies",
+    "response": [
+      {
+        "id": "p1",
+        "handle": "dev_engineer",
+        "text": "Shipped a new API today. Engagement score = likes + 2*reposts + replies.",
+        "created_at": "2024-02-10T14:00:00Z",
+        "likes": 45,
+        "replies": 12,
+        "reposts": 8,
+        "impressions": 3200,
+        "hashtags": ["backend", "api"],
+        "engagement_score": 73
+      },
+      {
+        "id": "p2",
+        "handle": "dev_engineer",
+        "text": "Debugging timezone bugs again.",
+        "created_at": "2024-02-15T09:30:00Z",
+        "likes": 22,
+        "replies": 5,
+        "reposts": 2,
+        "impressions": 890,
+        "hashtags": [],
+        "engagement_score": 31
+      },
+      {
+        "id": "p3",
+        "handle": "dev_engineer",
+        "text": "Week in review: 3 PRs merged.",
+        "created_at": "2024-02-20T18:00:00Z",
+        "likes": 18,
+        "replies": 3,
+        "reposts": 1,
+        "impressions": 450,
+        "hashtags": ["backend"],
+        "engagement_score": 23
+      }
+    ]
+  },
+  "engagement_trends": {
+    "endpoint": "GET /api/twitter/users/dev_engineer/engagement-trends",
+    "response": {
+      "handle": "dev_engineer",
+      "trend": [
+        {
+          "period": "2024-02",
+          "engagement_score": 109,
+          "post_count": 3
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,44 @@
+[
+  {
+    "enrollment_id": "e1",
+    "student_id": "s1",
+    "course_id": "c1",
+    "enrolled_at": "2024-01-10T09:00:00Z",
+    "status": "enrolled"
+  },
+  {
+    "enrollment_id": "e2",
+    "student_id": "s1",
+    "course_id": "c2",
+    "enrolled_at": "2024-01-10T09:05:00Z",
+    "status": "enrolled"
+  },
+  {
+    "enrollment_id": "e3",
+    "student_id": "s1",
+    "course_id": "c3",
+    "enrolled_at": "2024-01-10T09:10:00Z",
+    "status": "enrolled"
+  },
+  {
+    "enrollment_id": "e4",
+    "student_id": "s2",
+    "course_id": "c1",
+    "enrolled_at": "2024-01-10T09:15:00Z",
+    "status": "enrolled"
+  },
+  {
+    "enrollment_id": "e5",
+    "student_id": "s2",
+    "course_id": "c3",
+    "enrolled_at": "2024-01-10T09:20:00Z",
+    "status": "enrolled"
+  },
+  {
+    "enrollment_id": "e6",
+    "student_id": "s3",
+    "course_id": "c1",
+    "enrolled_at": "2024-01-10T09:25:00Z",
+    "status": "enrolled"
+  }
+]
