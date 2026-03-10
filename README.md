@@ -8,10 +8,31 @@ This repository contains **four independent backend API challenges**. Each chall
 
 ## Candidate Expectations
 
-- **Implementation language:** Flask + Python. All API implementations must be in Python using the Flask framework.
+- **Backend implementation:** Flask + Python. All API implementations must be in Python using the Flask framework.
+- **Frontend implementation:** A small React frontend that calls your Flask API for the challenge(s) you implement. The frontend should run locally against your Flask backend and support both a dev server and a production build.
 - **Contract definition:** Each challenge defines the API contract and data types in a **TypeScript file named `task.ts`**. Use `task.ts` as the source of truth for request/response shapes, field names, and types. Your Flask implementation should produce responses that match these contracts.
 - **Data source:** Each challenge provides a `mock-data/` directory with JSON files that simulate an external provider or database. Your implementation should read from these files (or from an in-memory representation of them) and return data according to the required endpoints and business rules.
-- **Deliverables:** A working Flask application that serves the required endpoints, with clear structure, error handling, and responses that match `example-response.json` in spirit and structure.
+- **Deliverables:** A working Flask backend and React frontend for the selected challenge(s), with clear structure, error handling, and responses that match `example-response.json` in spirit and structure.
+
+## Local Development and Build Expectations
+
+After you implement a challenge, a reviewer should be able to:
+
+- **Run the backend locally** from that challenge directory, for example:
+  - `python -m venv .venv && source .venv/bin/activate`
+  - `pip install -r requirements.txt`
+  - `flask run` (or an equivalent command documented in your README)
+- **Run the frontend locally** from a `frontend/` React app inside the same challenge directory, for example:
+  - `cd frontend`
+  - `npm install`
+  - `npm run dev`
+- **Build the frontend for production** from that same `frontend/` directory:
+  - `npm run build`
+
+You may choose your own project layout and tooling, but for each challenge you implement you must document the exact commands to:
+
+- start the Flask backend locally, and
+- start and build the React frontend locally.
 
 ## Evaluation Criteria
 

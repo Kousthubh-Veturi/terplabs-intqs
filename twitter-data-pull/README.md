@@ -41,11 +41,11 @@ See `task.ts` for the canonical types:
 - **Top posts:** Same post shape plus `engagement_score`, sorted by that value descending.
 - **Engagement trends:** Group posts by time period (e.g. month "YYYY-MM"). For each period, sum engagement_score and count posts.
 
-## 7. Suggested Flask Project Structure
+## 7. Suggested Project Structure and Local Commands
 
 ```
 twitter-data-pull/
-  app.py              # or main entry
+  app.py              # or main Flask entry
   requirements.txt
   mock-data/          # (provided)
   services/
@@ -54,7 +54,25 @@ twitter-data-pull/
     twitter_routes.py    # blueprint for /api/twitter/...
   tests/
     test_twitter_api.py
+  frontend/           # React app that calls your Flask API
+    package.json
+    src/
+      ...
 ```
+
+After you implement this challenge, it should be possible to:
+
+- **Run the backend locally** from `twitter-data-pull/` (example):
+  - `python -m venv .venv && source .venv/bin/activate`
+  - `pip install -r requirements.txt`
+  - `flask run` (or an equivalent command you document here)
+- **Run the frontend locally** from `twitter-data-pull/frontend/`:
+  - `npm install`
+  - `npm run dev`
+- **Build the frontend** from `twitter-data-pull/frontend/`:
+  - `npm run build`
+
+Document the exact commands you support in this README once your implementation is in place.
 
 ## 8. Evaluation Criteria
 

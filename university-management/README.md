@@ -50,7 +50,7 @@ See `task.ts` for the canonical types:
 - **Availability:** enrolled_count = number of enrollments with status "enrolled" for that course; available_slots = capacity - enrolled_count.
 - **POST enrollments:** Validate student_id and course_id exist. Then check: not already enrolled, capacity, prerequisites (all prerequisite course_ids must appear in the student’s transcript as completed/enrolled), no schedule overlap with current enrollments. If any check fails, return 409 with a descriptive error.
 
-## 7. Suggested Flask Project Structure
+## 7. Suggested Project Structure and Local Commands
 
 ```
 university-management/
@@ -66,7 +66,25 @@ university-management/
     enrollment_routes.py
   tests/
     test_enrollment_rules.py
+  frontend/           # React app that calls your Flask API
+    package.json
+    src/
+      ...
 ```
+
+After you implement this challenge, it should be possible to:
+
+- **Run the backend locally** from `university-management/` (example):
+  - `python -m venv .venv && source .venv/bin/activate`
+  - `pip install -r requirements.txt`
+  - `flask run` (or an equivalent command you document here)
+- **Run the frontend locally** from `university-management/frontend/`:
+  - `npm install`
+  - `npm run dev`
+- **Build the frontend** from `university-management/frontend/`:
+  - `npm run build`
+
+Document the exact commands you support in this README once your implementation is in place.
 
 ## 8. Evaluation Criteria
 

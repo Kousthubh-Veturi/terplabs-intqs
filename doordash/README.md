@@ -49,7 +49,7 @@ See `task.ts` for the canonical types:
 - **Cuisine breakdown:** From restaurant cuisine; count orders per cuisine (all orders or delivered-only—document your choice).
 - **Delivery metrics:** Actual delivery time in minutes from order_placed_at to delivered_at. Late = actual > estimated_delivery_minutes. late_delivery_rate = (late count / delivered count).
 
-## 7. Suggested Flask Project Structure
+## 7. Suggested Project Structure and Local Commands
 
 ```
 doordash/
@@ -62,7 +62,25 @@ doordash/
     doordash_routes.py
   tests/
     test_doordash_api.py
+  frontend/           # React app that calls your Flask API
+    package.json
+    src/
+      ...
 ```
+
+After you implement this challenge, it should be possible to:
+
+- **Run the backend locally** from `doordash/` (example):
+  - `python -m venv .venv && source .venv/bin/activate`
+  - `pip install -r requirements.txt`
+  - `flask run` (or an equivalent command you document here)
+- **Run the frontend locally** from `doordash/frontend/`:
+  - `npm install`
+  - `npm run dev`
+- **Build the frontend** from `doordash/frontend/`:
+  - `npm run build`
+
+Document the exact commands you support in this README once your implementation is in place.
 
 ## 8. Evaluation Criteria
 

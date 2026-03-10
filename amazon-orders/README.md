@@ -48,7 +48,7 @@ See `task.ts` for the canonical types:
 - **Frequent items:** One row per distinct item_id; times_ordered = number of orders containing that item; total_quantity = sum of quantity across those orders.
 - **Returns:** One record per returned line item (order_id, item details, quantity_returned).
 
-## 7. Suggested Flask Project Structure
+## 7. Suggested Project Structure and Local Commands
 
 ```
 amazon-orders/
@@ -61,7 +61,25 @@ amazon-orders/
     order_routes.py
   tests/
     test_order_api.py
+  frontend/           # React app that calls your Flask API
+    package.json
+    src/
+      ...
 ```
+
+After you implement this challenge, it should be possible to:
+
+- **Run the backend locally** from `amazon-orders/` (example):
+  - `python -m venv .venv && source .venv/bin/activate`
+  - `pip install -r requirements.txt`
+  - `flask run` (or an equivalent command you document here)
+- **Run the frontend locally** from `amazon-orders/frontend/`:
+  - `npm install`
+  - `npm run dev`
+- **Build the frontend** from `amazon-orders/frontend/`:
+  - `npm run build`
+
+Document the exact commands you support in this README once your implementation is in place.
 
 ## 8. Evaluation Criteria
 
